@@ -66,6 +66,14 @@ ul{
     text-transform: capitalize;
 }
 
+.col10{
+    float: left;
+    width: 10%;
+}
+.col15{
+    float: left;
+    width: 15%;
+}
 .col20{
     float: left;
     width: 20%;
@@ -84,6 +92,15 @@ ul{
 .col75{
     float: left;
     width: 75%;
+}
+.col80{
+    float: left;
+    width: 80%;
+}
+
+.col90{
+    float: left;
+    width: 90%;
 }
 
 .col100{
