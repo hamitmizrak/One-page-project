@@ -43,46 +43,53 @@
     <!--menu alanı : logo,menu-->
     <!-- nav start-->
     <nav>
-        <div class="container clearfix">
-            <div class="col15">
-                <div id="logo">
-                    <a href="#" class="ecodation">
-                        <img src="image/ecodation.png" id="logo_ecodation" alt="ecodation" width="50" height="50">
-                    </a></div>
-            </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-2 float-left">
+                    <div id="logo">
+                        <a href="#" class="ecodation">
+                            <img src="image/ecodation.png" id="logo_ecodation" alt="ecodation" width="50" height="50">
+                        </a></div>
+                </div>
+                <div class="col-md-10 clearfix ">
+                    <div id="menu" class="center44">
+                        <ul class="uppercase" style="margin-top:2.4rem">
 
-            <div class="col80">
-                <div id="menu" class="center44">
-                    <ul class="uppercase" style="margin-top:2.4rem">
-                        <li id="bar_icon" class="menu-item"> <a href="#"> <i class="fas fa-bars"></i> </a> </li>
-                        <li class="menu-item"> <a href="#"> <i class="fas fa-home"></i> Anasayfa</a> </li>
-                        <li class="menu-item"> <a href="#product"><i class="fas fa-user-check"></i>Ürünler</a> </li>
-                        <li class="menu-item"> <a href="#aboutme"><i class="fas fa-newspaper"></i>Hakkımızda</a> </li>
+                            <li id="bar_icon" class="menu-item"> <a href="#"> <i class="fas fa-bars"></i> </a> </li>
+                            <li class="menu-item"> <a href="#"> <i class="fas fa-home"></i> Anasayfa</a> </li>
+                            <li class="menu-item"> <a href="#product"><i class="fas fa-user-check"></i>Ürünler</a> </li>
+                            <li class="menu-item"> <a href="#aboutme"><i class="fas fa-newspaper"></i>Hakkımızda</a>
+                            </li>
 
-                        <li class="menu-item"> <a href="#s_s_s"><i class="far fa-id-card"></i>S.S.S</a> </li>
-                        <li class="menu-item">
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#concat_modal">
-                                <i class="far fa-id-card"></i> iletişim</button>
-                        </li>
-                        <li class="menu-item">
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </li>
-                    </ul>
+                            <li class="menu-item"> <a href="#s_s_s"><i class="far fa-id-card"></i>S.S.S</a> </li>
+                            <li class="menu-item">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#concat_modal">
+                                    <i class="far fa-id-card"></i> iletişim</button>
+                            </li>
+
+
+                            <li class="menu-item" id="search_id">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- nav finish-->
 
     <!--header alanı-->
     <!--  header start-->
     <header>
         <div id="header_image"></div>
+
+        </div>
         <div id="header_top">
             <div id="header_text">
                 <h1 class="uppercase " id="header_h1">Ecodation JavaScript One Page Project </h1>
@@ -90,7 +97,6 @@
                 <p style="margin-bottom:2rem;" id="header_p">Html5 ,Css3 ,Js ,Jquery,Bootstrap</p>
                 <a id="header_a" href="https://egitim.ecodation.com/" target="_blank">Details</a>
             </div>
-        </div>
     </header>
     <!-- header finish-->
 
@@ -107,393 +113,423 @@
 
     <!--body alanı-->
     <!-- main start-->
-    <main>
-
-        <section id="services" style="margin-top:10rem;">
-
-<div class="container">
-    <div class="alert alert-primary" role="alert">
-        <a href="#" class="alert-link">
-            <h3 class="text-center44 uppercase mt44">Services</h3>
-        </a>
-    </div>
-    <hr class="hr44">
-     <div class="row">
-         <p class="text-justify mb-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima debitis hic animi quis similique inventore delectus tenetur qui eaque aliquam aspernatur, voluptate reiciendis molestiae odio neque magni necessitatibus asperiores sint nihil molestias expedita. Fuga, eum nam minima possimus excepturi odio delectus tempora asperiores et quam blanditiis suscipit voluptatibus nihil rem repellendusFuga, eum nam minima possimus excepturi odio delectus tempora asperiores et quam blanditiis suscipit voluptatibus nihil rem repellendusFuga, eum nam minima possimus excepturi odio delectus tempora asperiores et quam blanditiis suscipit voluptatibus nihil rem repellendus</p>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                         
-                        </div>
-                    </div>
+    <div class="container">
+        <main>
+            <section id="services" style="margin-top:10rem;">
+                <div class="alert alert-primary" role="alert">
+                    <a href="#" class="alert-link">
+                        <h3 class="text-center44 uppercase mt44">Services</h3>
+                    </a>
                 </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12   col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                <i class="fas fa-cannabis"></i>
-                            </div>
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                  
-                        </div>
-                    </div>
-                </div>
-            </div>
-</div>
-           
-
-        </section>
-        <!-- product -->
-        <section id="product" style="margin-top:4rem;" class="clearfix">
-            <!-- bootstrap :alert-->
-            <div class="container">
-<div class="alert alert-primary" role="alert">
-                <a href="#" class="alert-link">
-                    <h3 class="text-center44 uppercase mt44">Ürünler</h3>
-                </a>
-            </div>
-
-            
-            
-            <div class="product_sub">
                 <hr class="hr44">
-                <div>
-                    <h3 class="text-center44 lowercase text-muted44">Laptop Xl75</h3>
-                    <div>
-                        <img src="image/ortahisar-5678553_1920.jpg" alt="">
-                    </div>
-                    <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                        nesciunt
-                        laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in modi.
-                        Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
-                        Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
-                        repudiandae
-                        fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed ipsa
-                        magnam commodi sunt eum!
-                        Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos. Rem
-                        atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
-                        libero
-                        harum debitis error cumque odio!
-                        Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
-                        aliquid,
-                        possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel id
-                        mollitia nihil totam! Ex!
-                        Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim, magni
-                        maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
-                        blanditiis
-                        nisi dolor id.</p>
-                </div>
-            </div>
+                <div class="row">
 
-            <div class="product_sub">
-                <h3 class="text-center44 lowercase text-muted44">Lenovo 84asd</h3>
-                <div>
-                    <img src="image/background-5060836_1920.jpg" alt="">
-                </div>
-                <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                    nesciunt
-                    laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in modi.
-                    Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
-                    Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
-                    repudiandae
-                    fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed ipsa
-                    magnam commodi sunt eum!
-                    Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos. Rem
-                    atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
-                    libero
-                    harum debitis error cumque odio!
-                    Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
-                    aliquid,
-                    possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel id
-                    mollitia nihil totam! Ex!
-                    Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim, magni
-                    maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
-                    blanditiis
-                    nisi dolor id.</p>
-            </div>
+                    <p class="text-justify mb-5 mt-3 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab minima
+                        debitis hic animi quis similique inventore delectus tenetur qui eaque aliquam aspernatur,
+                        voluptate reiciendis molestiae odio neque magni necessitatibus asperiores sint nihil molestias
+                        expedita. Fuga, eum nam minima possimus excepturi odio delectus tempora asperiores et quam
+                        blanditiis suscipit voluptatibus nihil rem repellendusFuga, eum nam minima possimus excepturi
+                        odio delectus tempora asperiores et quam blanditiis suscipit voluptatibus nihil rem
+                        repellendusFuga, eum nam minima possimus excepturi odio delectus tempora asperiores et quam
+                        blanditiis suscipit voluptatibus nihil rem repellendus</p>
 
-
-            <div class="product_sub">
-                <h3 class="text-center44 lowercase text-muted44">Samsung Xl75</h3>
-                <div>
-                    <img src="image/canal-3897510_1920.jpg" alt="">
-                </div>
-                <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                    nesciunt
-                    laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in modi.
-                    Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
-                    Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
-                    repudiandae
-                    fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed ipsa
-                    magnam commodi sunt eum!
-                    Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos. Rem
-                    atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
-                    libero
-                    harum debitis error cumque odio!
-                    Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
-                    aliquid,
-                    possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel id
-                    mollitia nihil totam! Ex!
-                    Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim, magni
-                    maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
-                    blanditiis
-                    nisi dolor id.</p>
-            </div>
-
-            <div class="product_sub">
-                <h3 class="text-center44 lowercase text-muted44">msi gl75 Xl75</h3>
-                <div>
-                    <img src="image/desk-593327_1920.jpg" alt="">
-                </div>
-                <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                    nesciunt
-                    laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in modi.
-                    Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
-                    Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
-                    repudiandae
-                    fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed ipsa
-                    magnam commodi sunt eum!
-                    Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos. Rem
-                    atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
-                    libero
-                    harum debitis error cumque odio!
-                    Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
-                    aliquid,
-                    possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel id
-                    mollitia nihil totam! Ex!
-                    Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim, magni
-                    maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
-                    blanditiis
-                    nisi dolor id.</p>
-            </div>
-        </div>
-        </section>
-
-
-        <!-- about-me -->
-        <section id="aboutme" class="clearfix text-muted44" style="margin-top: 2rem;">
-
-            <div class="container">
-<div class="alert alert-primary" role="alert">
-                <a href="#" class="alert-link">
-                    <h3 class="text-center44 uppercase mt44">Hakkımızda</h3>
-                </a>
-            </div>
-
-          
-
-            
-            <hr class="hr44">
-
-            <div class="col50">
-                <div id="about_left">
-                    <p style="padding:1rem;" class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Laboriosam culpa illum maiores consectetur
-                        vel reprehenderit iusto non facilis commodi aut laudantium fugit fugiat, deleniti porro
-                        quisquam
-                        nisi voluptate ab hic?
-                        Corrupti illo quisquam sint ex laboriosam placeat odio quae quis fugit, similique, sequi at
-                        alias
-                        voluptates quod quia, voluptatum quidem aspernatur aperiam unde ipsam et. Rem eaque at aut
-                        illum.
-                    </p>
-                </div>
-            </div>
-            <div class="col50">
-                <div id="about_right">
-                    <p style="padding:1rem;" class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Laboriosam culpa illum maiores consectetur
-                        vel reprehenderit iusto non facilis commodi aut laudantium fugit fugiat, deleniti porro
-                        quisquam
-                        nisi voluptate ab hic?
-                        Corrupti illo quisquam sint ex laboriosam placeat odio quae quis fugit, similique, sequi at
-                        alias
-                        voluptates quod quia, voluptatum quidem aspernatur aperiam unde ipsam et. Rem eaque at aut
-                        illum.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        </section>
-
-
-        <!-- s.s.s -->
-        <section id="s_s_s" class="clearfix" style="margin-top:2rem;">
-
-
-            <div class="container">
-  <div class="alert alert-primary" role="alert">
-                <a href="#" class="alert-link">
-                    <h3 class="text-center44 uppercase mt44">Sıklıkla Sorulan Sorular</h3>
-                </a>
-            </div>
-
-          
-
-          
-            <hr class="hr44">
-            <div class="container">
-
-                <!-- img-fluid:responsive resim -->
-                <div id="accordianId" role="tablist" aria-multiselectable="true">
-                    <div class="card">
-                        <div class="card-header" role="tab" id="section1HeaderId">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
-                                    aria-expanded="true" aria-controls="section1ContentId">
-                                    Section 1
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="section1ContentId" class="collapse in" role="tabpanel"
-                            aria-labelledby="section1HeaderId">
+                    <div class="  col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
                             <div class="card-body">
-                                Section 1 content
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fas fa-cannabis"></i>
+                                </div>
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+
                             </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
-        </div>
-        </section>
+            </section>
 
-
-        <!-- google -->
-        <section class="clearfix">
+            <!-- product -->
             <div class="container">
-            <div class="alert alert-primary" role="alert">
-                <a href="#" class="alert-link">
-                    <h3 class="text-center44 uppercase mt44">Google Maps</h3>
-                </a>
+                <section id="product" style="margin-top:-1rem;" class="clearfix">
+                    <!-- bootstrap :alert-->
+
+                    <div class="alert alert-primary" role="alert">
+                        <a href="#" class="alert-link">
+                            <h3 class="text-center44 uppercase mt44">Ürünler</h3>
+                        </a>
+                    </div>
+
+                    <div class="product_sub">
+                        <hr class="hr44">
+                        <div>
+                            <h3 class="text-center44 lowercase text-muted44">Laptop Xl75</h3>
+                            <div>
+                                <img src="image/ortahisar-5678553_1920.jpg" alt="">
+                            </div>
+                            <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptas
+                                nesciunt
+                                laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in
+                                modi.
+                                Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
+                                Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
+                                repudiandae
+                                fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa.
+                                Sed ipsa
+                                magnam commodi sunt eum!
+                                Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora
+                                dignissimos. Rem
+                                atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident
+                                accusantium
+                                libero
+                                harum debitis error cumque odio!
+                                Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque
+                                quo
+                                aliquid,
+                                possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate
+                                vel id
+                                mollitia nihil totam! Ex!
+                                Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati
+                                enim, magni
+                                maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
+                                blanditiis
+                                nisi dolor id.</p>
+                        </div>
+                    </div>
+
+                    <div class="product_sub">
+                        <h3 class="text-center44 lowercase text-muted44">Lenovo 84asd</h3>
+                        <div>
+                            <img src="image/background-5060836_1920.jpg" alt="">
+                        </div>
+                        <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas
+                            nesciunt
+                            laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in
+                            modi.
+                            Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
+                            Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
+                            repudiandae
+                            fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed
+                            ipsa
+                            magnam commodi sunt eum!
+                            Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos.
+                            Rem
+                            atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
+                            libero
+                            harum debitis error cumque odio!
+                            Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
+                            aliquid,
+                            possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel
+                            id
+                            mollitia nihil totam! Ex!
+                            Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim,
+                            magni
+                            maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
+                            blanditiis
+                            nisi dolor id.</p>
+                    </div>
+
+                    <div class="product_sub">
+                        <h3 class="text-center44 lowercase text-muted44">Samsung Xl75</h3>
+                        <div>
+                            <img src="image/canal-3897510_1920.jpg" alt="">
+                        </div>
+                        <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas
+                            nesciunt
+                            laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in
+                            modi.
+                            Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
+                            Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
+                            repudiandae
+                            fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed
+                            ipsa
+                            magnam commodi sunt eum!
+                            Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos.
+                            Rem
+                            atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
+                            libero
+                            harum debitis error cumque odio!
+                            Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
+                            aliquid,
+                            possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel
+                            id
+                            mollitia nihil totam! Ex!
+                            Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim,
+                            magni
+                            maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
+                            blanditiis
+                            nisi dolor id.</p>
+                    </div>
+
+                    <div class="product_sub">
+                        <h3 class="text-center44 lowercase text-muted44">msi gl75 Xl75</h3>
+                        <div>
+                            <img src="image/desk-593327_1920.jpg" alt="">
+                        </div>
+                        <p class="line-clamp-4 justify44">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas
+                            nesciunt
+                            laudantium voluptate, minima quo assumenda cumque doloremque architecto ab molestiae in
+                            modi.
+                            Quisquam commodi quia aspernatur dolorem ab? Assumenda, temporibus!
+                            Modi odit quaerat perferendis magnam, fugit rerum corporis iste deserunt laboriosam cum
+                            repudiandae
+                            fugiat possimus ab maxime, dicta, veritatis excepturi laborum earum dignissimos ipsa. Sed
+                            ipsa
+                            magnam commodi sunt eum!
+                            Sunt eius accusamus id, quia inventore provident saepe blanditiis iste tempora dignissimos.
+                            Rem
+                            atque, voluptate dolorum commodi eius iste molestias magnam deleniti provident accusantium
+                            libero
+                            harum debitis error cumque odio!
+                            Magni cupiditate modi dolore vel eligendi. Libero dolorum, minus ullam atque doloremque quo
+                            aliquid,
+                            possimus adipisci eaque ipsa accusantium maiores. Recusandae eligendi velit cupiditate vel
+                            id
+                            mollitia nihil totam! Ex!
+                            Tempora atque veniam reprehenderit libero sit blanditiis molestiae numquam obcaecati enim,
+                            magni
+                            maiores incidunt quo nisi nemo minus ex hic itaque deserunt magnam! Et asperiores, vel
+                            blanditiis
+                            nisi dolor id.</p>
+                    </div>
+                </section>
             </div>
 
-            <!-- <div class="mapouter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4">
-                            <div class="gmap_canvas"><iframe width="1200" height="600" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 800px;
-                                        width: 1200px;
-                                    }
-                                </style>
-                                <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none !important;
-                                        height: 800px;
-                                        width: 1200px;
-                                    }
-                                </style>
-                            </div>
 
+            <!-- about-me -->
+            <div class="container">
+                <section id="aboutme" class="clearfix text-muted44" style="margin-top: 2rem;">
 
-                        </div>
-                        <div class="col-4"></div>
+                    <div class="alert alert-primary" role="alert">
+                        <a href="#" class="alert-link">
+                            <h3 class="text-center44 uppercase mt44">Hakkımızda</h3>
+                        </a>
                     </div>
-                </div>
 
-            </div> -->
+                    <hr class="hr44" />
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 col-lg-6">
+                            <div id="about_left">
+                                <p style="padding:1rem;" class="line-clamp-4 justify44">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Laboriosam culpa illum maiores consectetur
+                                    vel reprehenderit iusto non facilis commodi aut laudantium fugit fugiat, deleniti
+                                    porro
+                                    quisquam
+                                    nisi voluptate ab hic?
+                                    Corrupti illo quisquam sint ex laboriosam placeat odio quae quis fugit, similique,
+                                    sequi
+                                    at
+                                    alias
+                                    voluptates quod quia, voluptatum quidem aspernatur aperiam unde ipsam et. Rem eaque
+                                    at
+                                    aut
+                                    illum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-6">
+                            <div id="about_right">
+                                <p style="padding:1rem;" class="line-clamp-4 justify44">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Laboriosam culpa illum maiores consectetur
+                                    vel reprehenderit iusto non facilis commodi aut laudantium fugit fugiat, deleniti
+                                    porro
+                                    quisquam
+                                    nisi voluptate ab hic?
+                                    Corrupti illo quisquam sint ex laboriosam placeat odio quae quis fugit, similique,
+                                    sequi
+                                    at
+                                    alias
+                                    voluptates quod quia, voluptatum quidem aspernatur aperiam unde ipsam et. Rem eaque
+                                    at
+                                    aut
+                                    illum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-        </div>
-        </section>
+            <!-- s.s.s -->
+            <div class="container">
+                <section id="s_s_s" class="clearfix" style="margin-top:2rem;">
+                    <div class="alert alert-primary" role="alert">
+                        <a href="#" class="alert-link">
+                            <h3 class="text-center44 uppercase mt44">Sıklıkla Sorulan Sorular</h3>
+                        </a>
+                    </div>
+                    <hr class="hr44">
+
+                    <!-- img-fluid:responsive resim -->
+                    <div id="accordianId" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="section1HeaderId">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
+                                        aria-expanded="true" aria-controls="section1ContentId">
+                                        Section 1
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="section1ContentId" class="collapse in" role="tabpanel"
+                                aria-labelledby="section1HeaderId">
+                                <div class="card-body">
+                                    Section 1 content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
 
-        <!-- <div style="margin-top:5rem;" class="alert alert-primary" role="alert">
+            <!-- google -->
+            <div class="container">
+                <section class="clearfix">
+                    <div class="alert alert-primary" role="alert">
+                        <a href="#" class="alert-link">
+                            <h3 class="text-center44 uppercase mt44">Google Maps</h3>
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="mapouter">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="gmap_canvas"><iframe width="100%" height="600" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 800px;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                    <style>
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 800px;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- <div style="margin-top:5rem;" class="alert alert-primary" role="alert">
             <a href="#" class="alert-link">
                 <h3 class="text-center44 uppercase mt44">Bootstrap</h3>
             </a>
@@ -530,8 +566,8 @@
         </section> -->
 
 
-        <!-- <div class="container-fluid"> -->
-        <!-- <section id="b_table">
+            <!-- <div class="container-fluid"> -->
+            <!-- <section id="b_table">
             <div class="container">
                 <div class="row">
                    
@@ -576,8 +612,8 @@
             </div>
         </section> -->
 
-        <!-- img-fluid:responsive resim -->
-        <!-- <section id="img-6">
+            <!-- img-fluid:responsive resim -->
+            <!-- <section id="img-6">
             <div class="container">
              
                 <div class="row">
@@ -590,18 +626,17 @@
                 </div>
             </div>
         </section> -->
-    </main>
+        </main>
+    </div>
     <!-- main finish-->
 
     <!--footer alanı-->
     <!-- footer start-->
     <br>
     <footer class="clearfix">
-
-
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-sm-12 col-md-6">
                     <div style="margin-top:2rem">
                         <button class="common_button" id="ios"><i class="fab fa-apple text-warning"></i>IOS</button>
                         <button class="common_button" id="adroid"><i
@@ -617,29 +652,25 @@
                         </p>
                     </address>
                 </div>
-                <div class="col-6">
-                    <div class="col-9">
+                <div class="col-sm-12 col-md-6">
 
-                        <h3 class="text-center"></h3>Email </h3>
-                        <form action="" method="get">
-                            <div class="form-group">
-                                <input type="text" class="form-control bg-dark text-white"
-                                    placeholder="adınız soyadınız" required="true" id="adiniz" class="adiniz" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control bg-dark text-white" placeholder="emailiniz"
-                                    required="true" id="email" class="email" />
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control bg-dark text-white" placeholder="telefonunuz"
-                                    required="true" id="email" class="email" />
-                            </div>
-                            <input type="reset" value="Temizle" class="btn btn-danger">
-                            <input type="submit" value="Gönder" class="btn btn-primary">
-                        </form>
-
-
-                    </div>
+                    <h3 class="text-center"></h3>Email </h3>
+                    <form action="" method="get">
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-dark text-white" placeholder="adınız soyadınız"
+                                required="true" id="adiniz" class="adiniz" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control bg-dark text-white" placeholder="emailiniz"
+                                required="true" id="email" class="email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control bg-dark text-white" placeholder="telefonunuz"
+                                required="true" id="email" class="email" />
+                        </div>
+                        <input type="reset" value="Temizle" class="btn btn-danger">
+                        <input type="submit" value="Gönder" class="btn btn-primary">
+                    </form>
                 </div>
             </div>
         </div>
@@ -648,12 +679,9 @@
 
     </footer>
     <div class="container-fluid44" id="allRezer">
-        <p>&copy; Bütün Haklar saklıdır.</p>
+        <p><span style="background-color: blueviolet; color:white;">&copy; Bütün Haklar saklıdır.</span> </p>
     </div>
     <!-- footer finish-->
-
-
-
 
     <div class="modal fade" id="concat_modal">
         <div class="modal-dialog modal-dialog-center ">
@@ -699,7 +727,6 @@
             </div>
         </div>
     </div>
-
     <!--   finish codes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
