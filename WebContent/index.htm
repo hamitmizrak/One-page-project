@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!-- 127.0.0.1:5501/WebContent/index.htm -->
 
 <head>
     <title>JavaScript course | One page</title>
@@ -28,12 +29,43 @@
     <!-- External Css -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- External Js -->
-    <script src="js/template.js"></script>
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- External Js -->
+    <script src="js/template.js"></script>
+
+
+    <style>
+        #feedback {
+            font-size: 1.4em;
+        }
+
+        #selectable .ui-selecting {
+            background: #FECA40;
+        }
+
+        #selectable .ui-selected {
+            background: #F39814;
+            color: white;
+        }
+
+        #selectable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60%;
+        }
+
+        #selectable li {
+            margin: 3px;
+            padding: 0.4em;
+            font-size: 1.4em;
+            height: 18px;
+        }
+    </style>
 </head>
 
 <body id="body_header">
@@ -42,6 +74,65 @@
 
     <!--menu alanı : logo,menu-->
     <!-- nav start-->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            LOGO
+
+        </a>
+
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#product">Ürünler</a>
+                        <a class="dropdown-item" href="#aboutme">Hakkımızda</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#s_s_s">SSS</a>
+                        <a class="dropdown-item" href="#concat_modal">iletişim</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#product">Ürünler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#aboutme">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#s_s_s">SSS</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#concat_modal">
+                        <i class="far fa-id-card"></i> iletişim</button>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="tags">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
     <nav>
         <div class="container ">
             <div class="row">
@@ -53,8 +144,9 @@
                 </div>
                 <div class="col-md-10 clearfix ">
                     <div id="menu" class="center44">
-                        <ul class="uppercase" style="margin-top:2.4rem">
 
+
+                        <ul class="uppercase" style="margin-top:2.4rem">
                             <li id="bar_icon" class="menu-item"> <a href="#"> <i class="fas fa-bars"></i> </a> </li>
                             <li class="menu-item"> <a href="#"> <i class="fas fa-home"></i> Anasayfa</a> </li>
                             <li class="menu-item"> <a href="#product"><i class="fas fa-user-check"></i>Ürünler</a> </li>
@@ -71,12 +163,16 @@
 
                             <li class="menu-item" id="search_id">
                                 <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                    <input id="tags" class="form-control me-2" type="search" placeholder="Search"
                                         aria-label="Search">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                 </form>
                             </li>
                         </ul>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -115,6 +211,37 @@
     <!-- main start-->
     <div class="container">
         <main>
+
+            <section id="slider" style="margin-top:20rem;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="image/background-5060836_1920.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="image/canal-3897510_1920.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="image/coffee-6464307_1920.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </section>
+
             <section id="services" style="margin-top:10rem;">
                 <div class="alert alert-primary" role="alert">
                     <a href="#" class="alert-link">
@@ -467,69 +594,130 @@
                     </div>
                     <hr class="hr44">
 
-                    <!-- img-fluid:responsive resim -->
-                    <div id="accordianId" role="tablist" aria-multiselectable="true">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="section1HeaderId">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
-                                        aria-expanded="true" aria-controls="section1ContentId">
-                                        Section 1
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="section1ContentId" class="collapse in" role="tabpanel"
-                                aria-labelledby="section1HeaderId">
-                                <div class="card-body">
-                                    Section 1 content
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            </div>
+
+            <div id="accordion4">
+                <h3>Html Nedir ?</h3>
+                <div>
+                    <p>
+                        Betik bir dildir Programlama dili değildir.
+                    </p>
+                </div>
+                <h3>Css</h3>
+                <div>
+                    <p>
+                        Css Html taglerini daha güzel göstermek için kullandığımız birimlerdir.
+                    </p>
+                </div>
+                <h3>Responsive Design </h3>
+                <div>
+                    <p>
+                        Bütün cihazlara göre kodlamadır
+                    </p>
+                    <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                </div>
+                <h3>Bootstrap</h3>
+                <div>
+                    <p>
+                        Css Frameworkkudur
+                    </p>
+
+                </div>
+                <h3>JS</h3>
+                <div>
+                    <p>
+                        Ts ile birlikte bir programlama dilidir. Betik dildir.
+                    </p>
+
+                </div>
+                <h3>jQuery</h3>
+                <div>
+                    <p>
+                        JS'in bir kütüphanesidir.
+                    </p>
+
+                </div>
+            </div>
+
+            <div id="chooise" class="mt-5 mb-5">
+                <ol id="selectable">
+                    <li class="ui-widget-content">Item 1</li>
+                    <li class="ui-widget-content">Item 2</li>
+                    <li class="ui-widget-content">Item 3</li>
+                    <li class="ui-widget-content">Item 4</li>
+                    <li class="ui-widget-content">Item 5</li>
+                    <li class="ui-widget-content">Item 6</li>
+                    <li class="ui-widget-content">Item 7</li>
+                </ol>
             </div>
 
 
-            <!-- google -->
-            <div class="container">
-                <section class="clearfix">
-                    <div class="alert alert-primary" role="alert">
-                        <a href="#" class="alert-link">
-                            <h3 class="text-center44 uppercase mt44">Google Maps</h3>
-                        </a>
+            <!-- img-fluid:responsive resim -->
+            <div id="accordianId" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="section1HeaderId">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
+                                aria-expanded="true" aria-controls="section1ContentId">
+                                Section 1
+                            </a>
+                        </h5>
                     </div>
-
-                    <div class="row">
-                        <div class="mapouter">
-                            <div class="col-sm-12 col-md-12">
-                                <div class="gmap_canvas"><iframe width="100%" height="600" id="gmap_canvas"
-                                        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                    <style>
-                                        .mapouter {
-                                            position: relative;
-                                            text-align: right;
-                                            height: 800px;
-                                            width: 100%;
-                                        }
-                                    </style>
-                                    <style>
-                                        .gmap_canvas {
-                                            overflow: hidden;
-                                            background: none !important;
-                                            height: 800px;
-                                            width: 100%;
-                                        }
-                                    </style>
-                                </div>
-                            </div>
+                    <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                        <div class="card-body">
+                            Section 1 content
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+            </section>
+    </div>
+
+
+    <!-- google -->
+    <div class="container">
+        <section class="clearfix">
+            <div class="alert alert-primary" role="alert">
+                <a href="#" class="alert-link">
+                    <h3 class="text-center44 uppercase mt44">Google Maps</h3>
+                </a>
             </div>
 
+            <div class="row">
+                <div class="mapouter">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="gmap_canvas"><iframe width="100%" height="600" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 800px;
+                                    width: 100%;
+                                }
+                            </style>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 800px;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-            <!-- <div style="margin-top:5rem;" class="alert alert-primary" role="alert">
+
+    <!-- <div style="margin-top:5rem;" class="alert alert-primary" role="alert">
             <a href="#" class="alert-link">
                 <h3 class="text-center44 uppercase mt44">Bootstrap</h3>
             </a>
@@ -566,8 +754,8 @@
         </section> -->
 
 
-            <!-- <div class="container-fluid"> -->
-            <!-- <section id="b_table">
+    <!-- <div class="container-fluid"> -->
+    <!-- <section id="b_table">
             <div class="container">
                 <div class="row">
                    
@@ -612,8 +800,8 @@
             </div>
         </section> -->
 
-            <!-- img-fluid:responsive resim -->
-            <!-- <section id="img-6">
+    <!-- img-fluid:responsive resim -->
+    <!-- <section id="img-6">
             <div class="container">
              
                 <div class="row">
@@ -626,7 +814,7 @@
                 </div>
             </div>
         </section> -->
-        </main>
+    </main>
     </div>
     <!-- main finish-->
 
@@ -638,9 +826,13 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <div style="margin-top:2rem">
+                        <h4 id="dateId"></h4>
                         <button class="common_button" id="ios"><i class="fab fa-apple text-warning"></i>IOS</button>
                         <button class="common_button" id="adroid"><i
-                                class="fab fa-android text-warning"></i>Android</button>
+                                class="fab fa-android text-danger"></i>Android</button>
+
+                        <button class="common_button bg-dark text-white" onclick="dateShow()"><i
+                                class="fab fa-android "></i>Tarihi Göster</button>
                     </div>
 
                     <address style="margin-top:2rem">
@@ -655,21 +847,35 @@
                 <div class="col-sm-12 col-md-6">
 
                     <h3 class="text-center"></h3>Email </h3>
-                    <form action="" method="get">
+
+                    <form action="index.htm" method="GET">
                         <div class="form-group">
-                            <input type="text" class="form-control bg-dark text-white" placeholder="adınız soyadınız"
-                                required="true" id="adiniz" class="adiniz" />
+                            <input type="text" class="form-control bg-dark text-white" placeholder="adınız soyadınız" 
+                                id="adinizSoyadiniz" class="adiniz" />
+                            <span id="validation_adiniz" class="text-danger" > </span>
                         </div>
+
                         <div class="form-group">
-                            <input type="email" class="form-control bg-dark text-white" placeholder="emailiniz"
-                                required="true" id="email" class="email" />
+                            <input type="text" class="form-control bg-dark text-white" placeholder="emailiniz"
+                                id="email" class="email" />
+                            <span id="validation_emailiniz" class="text-danger" />
                         </div>
+
                         <div class="form-group">
-                            <input type="tel" class="form-control bg-dark text-white" placeholder="telefonunuz"
-                                required="true" id="email" class="email" />
+                            <input type="text" class="form-control bg-dark text-white" placeholder="telefonunuz"
+                                id="telefonunuz" class="email" />
+                            <span id="validation_telefonunuz" class="text-danger" />
                         </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-dark text-white" placeholder="tarih"
+                                required="true" id="tarih" class="email" />
+                        </div>
+
                         <input type="reset" value="Temizle" class="btn btn-danger">
-                        <input type="submit" value="Gönder" class="btn btn-primary">
+                        <input id="btnSubmit" type="submit" value="Gönder" class="btn btn-primary">
+
+
                     </form>
                 </div>
             </div>
